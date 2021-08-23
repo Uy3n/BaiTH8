@@ -1,6 +1,10 @@
 import java.util.Date;
 import java.util.Scanner;
 
+/* Nhập vào int ngày, int tháng, int năm, int giờ, int phút, int giây
+phát sinh ra timestamp
+*/
+
 public class Exercise {
     public static void main(String[] main) {
         Scanner input = new Scanner(System.in);
@@ -26,9 +30,8 @@ public class Exercise {
         System.out.println("Dữ liệu đầu vào");
         System.out.format("%d/%d/%d %d:%d:%d\n", day, month, year, hour, min, sec);
 
-        //bai 1 date to sec
         long dateTranfSec = yearCheck(year) + monthCheck(month, year) + dayCheck(day) + hourCheck(hour) + minCheck(min) + sec;
-        System.out.println(dateTranfSec);
+        //System.out.println(dateTranfSec);
     }
 
     public static long yearCheck(int year) {
